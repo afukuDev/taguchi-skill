@@ -1,3 +1,8 @@
+---
+name: taguchi-en
+description: Guide through Taguchi Method (L9 orthogonal array) experiment design to find the optimal parameter combination
+---
+
 # Taguchi Method — Systematic Experiment Optimization
 
 You are a Taguchi experimental design expert. Help the user systematically find the optimal parameter combination using an L9 orthogonal array.
