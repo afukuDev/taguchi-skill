@@ -10,7 +10,13 @@
 
 ### 安裝方式
 
-**macOS / Linux**
+**最簡單：ZIP 匯入（推薦）**
+
+1. 點右上角 **Code → Download ZIP** 下載整包
+2. 開啟 Claude Desktop → 右上角選單 → **Customize → Skills → 新增 Skill**
+3. 選擇解壓後的 `SKILL_zh.md`（中文）、`SKILL.md`（英文）或 `SKILL_ja.md`（日文）匯入即可
+
+**macOS / Linux（指令）**
 ```bash
 mkdir -p ~/.claude/commands
 cp SKILL_zh.md ~/.claude/commands/taguchi.md
@@ -80,7 +86,13 @@ Use Taguchi Method to identify the optimal factor combination from a structured 
 
 ### Installation
 
-**macOS / Linux**
+**Easiest: ZIP Import (Recommended)**
+
+1. Click **Code → Download ZIP** on this page
+2. Open Claude Desktop → top-right menu → **Customize → Skills → Add Skill**
+3. Select `SKILL.md` (English), `SKILL_zh.md` (Chinese), or `SKILL_ja.md` (Japanese) to import
+
+**macOS / Linux (Terminal)**
 ```bash
 mkdir -p ~/.claude/commands
 cp SKILL_zh.md ~/.claude/commands/taguchi.md
@@ -158,7 +170,13 @@ Claude Code で使える再利用可能なスラッシュコマンドです。**
 
 ### インストール
 
-**macOS / Linux**
+**最も簡単：ZIP インポート（推奨）**
+
+1. このページの **Code → Download ZIP** をクリックしてダウンロード
+2. Claude Desktop を開く → 右上メニュー → **Customize → Skills → Skill を追加**
+3. 解凍した `SKILL_ja.md`（日本語）、`SKILL.md`（英語）、`SKILL_zh.md`（中国語）を選択してインポート
+
+**macOS / Linux（ターミナル）**
 ```bash
 mkdir -p ~/.claude/commands
 cp SKILL_ja.md ~/.claude/commands/taguchi-ja.md
