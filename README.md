@@ -1,4 +1,4 @@
-# 田口最佳化 Skill — Claude Code / Taguchi Optimization Skill
+# 田口最佳化 Skill — Claude Code / Taguchi Optimization Skill / 田口メソッド Skill
 
 ---
 
@@ -15,6 +15,7 @@
 mkdir -p ~/.claude/commands
 cp SKILL_zh.md ~/.claude/commands/taguchi.md
 cp SKILL.md ~/.claude/commands/taguchi-en.md
+cp SKILL_ja.md ~/.claude/commands/taguchi-ja.md
 ```
 
 **Windows（PowerShell）**
@@ -22,6 +23,7 @@ cp SKILL.md ~/.claude/commands/taguchi-en.md
 mkdir "$env:USERPROFILE\.claude\commands"
 Copy-Item "SKILL_zh.md" "$env:USERPROFILE\.claude\commands\taguchi.md"
 Copy-Item "SKILL.md" "$env:USERPROFILE\.claude\commands\taguchi-en.md"
+Copy-Item "SKILL_ja.md" "$env:USERPROFILE\.claude\commands\taguchi-ja.md"
 ```
 
 ### 使用方式
@@ -29,6 +31,7 @@ Copy-Item "SKILL.md" "$env:USERPROFILE\.claude\commands\taguchi-en.md"
 ```
 /taguchi        # 中文引導流程
 /taguchi-en     # English guided flow
+/taguchi-ja     # 日本語ガイド
 ```
 
 ### 適用情境
@@ -82,6 +85,7 @@ Use Taguchi Method to identify the optimal factor combination from a structured 
 mkdir -p ~/.claude/commands
 cp SKILL_zh.md ~/.claude/commands/taguchi.md
 cp SKILL.md ~/.claude/commands/taguchi-en.md
+cp SKILL_ja.md ~/.claude/commands/taguchi-ja.md
 ```
 
 **Windows (PowerShell)**
@@ -89,6 +93,7 @@ cp SKILL.md ~/.claude/commands/taguchi-en.md
 mkdir "$env:USERPROFILE\.claude\commands"
 Copy-Item "SKILL_zh.md" "$env:USERPROFILE\.claude\commands\taguchi.md"
 Copy-Item "SKILL.md" "$env:USERPROFILE\.claude\commands\taguchi-en.md"
+Copy-Item "SKILL_ja.md" "$env:USERPROFILE\.claude\commands\taguchi-ja.md"
 ```
 
 ### Usage
@@ -96,6 +101,7 @@ Copy-Item "SKILL.md" "$env:USERPROFILE\.claude\commands\taguchi-en.md"
 ```
 /taguchi        # Chinese guided flow (中文引導)
 /taguchi-en     # English guided flow
+/taguchi-ja     # 日本語ガイド
 ```
 
 ### When to Use
@@ -142,9 +148,52 @@ Copy-Item "SKILL.md" "$env:USERPROFILE\.claude\commands\taguchi-en.md"
 
 ---
 
+---
+
+## 日本語
+
+Claude Code で使える再利用可能なスラッシュコマンドです。**田口メソッド（タグチメソッド）**の実験設計をステップバイステップでガイドします。27通りの組み合わせの代わりに9回の実験で最適パラメータを体系的に発見できます。
+
+田口最適化を活用して、実験の最適因子組み合わせを特定します。
+
+### インストール
+
+**macOS / Linux**
+```bash
+mkdir -p ~/.claude/commands
+cp SKILL_ja.md ~/.claude/commands/taguchi-ja.md
+```
+
+**Windows（PowerShell）**
+```powershell
+mkdir "$env:USERPROFILE\.claude\commands"
+Copy-Item "SKILL_ja.md" "$env:USERPROFILE\.claude\commands\taguchi-ja.md"
+```
+
+### 使い方
+
+```
+/taguchi-ja     # 日本語ガイド
+```
+
+### 適用場面
+
+| 状況 | 田口法を使う？ |
+|------|--------------|
+| 3〜4つの制御可能なパラメータを調整したい | ✅ |
+| 全要因実験はコストが高すぎる | ✅ |
+| どの因子が最も重要か知りたい | ✅ |
+| 因子間の強い交互作用が予想される | ⚠️ 完全要因実験を使用 |
+| パラメータが1〜2つだけ | ⚠️ A/Bテストで十分 |
+
+**主な適用分野：** AIプロンプト最適化、製造プロセス改善、UI/UXパラメータテスト、機械学習ハイパーパラメータ探索、配合最適化。
+
+---
+
 ## Files
 
 | File | Description |
 |------|-------------|
 | `SKILL.md` | Claude Code skill — English |
 | `SKILL_zh.md` | Claude Code skill — 中文版 |
+| `SKILL_ja.md` | Claude Code skill — 日本語版 |
