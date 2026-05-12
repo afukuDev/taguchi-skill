@@ -4,7 +4,7 @@
 
 ## 中文
 
-一個可重複使用的 Claude Code 斜線指令，引導你完成**田口實驗設計（Taguchi Method）**，用 9 組實驗取代 27 種組合，系統化找出最佳參數。
+一個可重複使用的 Claude Code 斜線指令，引導你完成**田口實驗設計（Taguchi Method）**，系統化找出最佳參數。
 
 利用田口最佳化找出實驗組合的最佳因子。
 
@@ -74,7 +74,7 @@ Copy-Item "SKILL_ja.md" "$env:USERPROFILE\.claude\commands\taguchi-ja.md"
 
 ## English
 
-A reusable Claude Code slash command that guides you through **Taguchi Method** experimental design — systematically finding the optimal parameter combination with only 9 experiments instead of 27.
+A reusable Claude Code slash command that guides you through **Taguchi Method** experimental design — systematically finding the optimal parameter combination.
 
 Use Taguchi Method to identify the optimal factor combination from a structured experiment design.
 
@@ -152,7 +152,7 @@ Copy-Item "SKILL_ja.md" "$env:USERPROFILE\.claude\commands\taguchi-ja.md"
 
 ## 日本語
 
-Claude Code で使える再利用可能なスラッシュコマンドです。**田口メソッド（タグチメソッド）**の実験設計をステップバイステップでガイドします。27通りの組み合わせの代わりに9回の実験で最適パラメータを体系的に発見できます。
+Claude Code で使える再利用可能なスラッシュコマンドです。**田口メソッド（タグチメソッド）**の実験設計をステップバイステップでガイドし、最適なパラメータ組み合わせを体系的に発見できます。
 
 田口最適化を活用して、実験の最適因子組み合わせを特定します。
 
